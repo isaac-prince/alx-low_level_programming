@@ -1,1 +1,1 @@
-This directoty contains more nested files
+This is the read me file 
