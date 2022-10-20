@@ -1,14 +1,22 @@
-#include <stdio.h>
-
-/**
- * b - prints from init by the loader before main
+/*
+ * File: 100-first.c
+ * Auth: Brennan D Baraban
  */
 
-void b(void) __attribute__ ((constructor))
-void b(void)
+#include <stdio.h>
+
+void __attribute__((constructor)) hare(void);
+
+/**
+ * hare - Prints a string before the
+ *  main function is executed.
+ */
+
+void hare(void)
 
 {
 
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
-}
+	printf("You're beat! and yet, you must allow,\n"
+		       "I bore my house upon my back!\n");
+
+
